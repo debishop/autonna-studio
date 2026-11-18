@@ -353,7 +353,7 @@ def page(slug, s):
 <p class="small">{SENDER["email"]}. Want the full-size files, or the other images? Just ask.</p>
 </section>
 <footer>{SENDER["name"]}, {SENDER["co"]}<br>{SENDER["addr"]}<br>
-These are AI-generated sample images. Autonna is not affiliated with {e(s["name"])}.<br>
+Sample images made for {e(s["name"])}. Autonna is not affiliated with {e(s["name"])}.<br>
 Don't want to hear from us? Reply "no thanks" to our email and we won't contact you again.</footer>
 <dialog id="lb" aria-label="Image viewer"><img alt=""><div class="lb-bar"><span></span><button type="button">Close</button></div></dialog>
 <script>
