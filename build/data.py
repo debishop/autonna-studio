@@ -21,7 +21,7 @@ SHOPS = {
         "theme": "dorsis",
         "hero_line": "Your bakes, styled for the season.",
         "hero_img": 0,
-        "intro": "We made these 25 images from your menu and your own product photos. They're yours to keep and post, free.",
+        "intro": "We made these images from your menu and your own product photos. They're yours to keep and post, free.",
         "made": "These are AI images set in one studio look built around your logo and colours. The red velvet, carrot cake, tiramisu, Napoleon and ring cakes were made from your own product photos. The rest are our styling of items on your menu. The printed box is a packaging idea, not your current box. Every headline uses your own words.",
         "sections": [
             ("Product heroes", "The scroll-stopping shots.", "p", _d[0:5]),
@@ -38,7 +38,7 @@ SHOPS = {
         "theme": "florals",
         "hero_line": "Say it in roses.",
         "hero_img": (4, 0),
-        "intro": "We made these 25 images from your own bouquets and arrangements. They're yours to keep and post, free.",
+        "intro": "We made these images from your own bouquets and arrangements. They're yours to keep and post, free.",
         "made": "These are AI images. Every bouquet shown was made from the real product photos in your online shop, set in one studio look built around your blush, burgundy and gold. Every headline uses your own words or your product names.",
         "sections": [
             ("Product portraits", "Your bouquets, one at a time.", "p", cf([
@@ -85,7 +85,7 @@ SHOPS = {
         "theme": "spa",
         "hero_line": "Paws on, stress off.",
         "hero_img": 0,
-        "intro": "We made these 25 images around your services and your own words. They're yours to keep and post, free.",
+        "intro": "We made these images around your services and your own words. They're yours to keep and post, free.",
         "made": "These are AI images, set in one calm spa look built around your clawfoot-tub logo, cream and aubergine. The pets are not your clients; they show the services on your site. Every headline uses your own words.",
         "sections": [
             ("Portraits", "Freshly groomed, one at a time.", "p", cf([
@@ -132,7 +132,7 @@ SHOPS = {
         "theme": "boxing",
         "hero_line": "Any age. All levels. One goal.",
         "hero_img": 0,
-        "intro": "We made these 25 images around your gym, your programs and your own words. They're yours to keep and post, free.",
+        "intro": "We made these images around your gym, your programs and your own words. They're yours to keep and post, free.",
         "made": "These are AI images in one gritty look built around your HEU banner and your ring. There are no people in them, so nobody is shown who doesn't train with you. Every headline uses your own words, programs and hours from your website.",
         "sections": [
             ("The gear", "Gloves, wraps and bags.", "p", cf([
@@ -179,7 +179,7 @@ SHOPS = {
         "theme": "coffee",
         "hero_line": "Good Coffee. Good Music. Good Company.",
         "hero_img": (4, 4),
-        "intro": "We made these 25 images from your menu, your logo and your own photos. They're yours to keep and post, free.",
+        "intro": "We made these images from your menu, your logo and your own photos. They're yours to keep and post, free.",
         "made": "These are AI images in one warm look built around your record-badge logo. Every drink and bake shown is on your menu today; the Butter Love Latte, Iced Matcha and C.R.E.A.M. Brulee were made from your own photos. Smashing Pumpkins and the Pear Apple Cobbler Chai may be seasonal, so check before posting. Every headline uses your own words.",
         "sections": [
             ("The menu", "Your drinks, one at a time.", "p", cf([
@@ -219,4 +219,14 @@ SHOPS = {
             ])),
         ],
     },
+}
+
+
+# 7 shown per shop: hero + 4 feed posts + 2 story covers (flat index = section*5 + item)
+PICKS = {
+    "dorsis":       {"hero": 0,  "posts": [2, 5, 7, 15],   "stories": [11, 14]},
+    "rich-florals": {"hero": 20, "posts": [2, 19, 18, 10], "stories": [5, 8]},
+    "lavish-tails": {"hero": 0,  "posts": [15, 16, 11, 21], "stories": [5, 8]},
+    "hit-em-up":    {"hero": 0,  "posts": [21, 16, 10, 20], "stories": [5, 6]},
+    "rnbeans":      {"hero": 24, "posts": [0, 17, 10, 1],  "stories": [5, 7]},
 }

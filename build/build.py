@@ -9,7 +9,7 @@ import sys
 import urllib.parse
 
 sys.path.insert(0, os.path.dirname(__file__))
-from data import SHOPS  # noqa: E402
+from data import SHOPS, PICKS  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MODE = "preview" if len(sys.argv) > 1 and sys.argv[1] == "preview" else "prod"
@@ -64,11 +64,16 @@ a{color:inherit}
 .grid.p figure:first-child{grid-column:span 2;grid-row:span 2}
 .grid.p.flip figure:first-child{grid-column:3 / span 2;grid-row:1 / span 2}
 .grid.s{grid-template-columns:repeat(5,1fr)}
+.grid.four{grid-template-columns:repeat(4,1fr)}
+.grid.trio{grid-template-columns:repeat(3,1fr);align-items:stretch;max-width:960px;margin:0 auto}
+.more{display:flex;flex-direction:column;justify-content:center;padding:clamp(24px,3vw,40px);border:1px solid var(--line);border-radius:var(--radius);background:var(--soft)}
+.more-n{margin:0 0 12px;font:400 clamp(40px,4.5vw,64px)/1 var(--display);color:var(--accent)}
+.more p:last-child{margin:0;color:var(--muted)}
 figure{margin:0}
 .shot{all:unset;display:block;width:100%;cursor:zoom-in;position:relative;overflow:hidden;border-radius:var(--radius);background:var(--soft)}
 .shot:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 .shot img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/5}
-.grid.s .shot img{aspect-ratio:9/16}
+.grid.s .shot img,.grid.trio .shot img{aspect-ratio:9/16}
 .grid.p figure:first-child .shot,.grid.p figure:first-child .shot img{height:100%}
 .grid.p figure:first-child{display:flex;flex-direction:column}
 .grid.p figure:first-child .shot{flex:1}
@@ -93,7 +98,9 @@ dialog button{font:600 14px var(--body);background:#fff;color:#000;border:0;bord
  .grid.p{grid-template-columns:repeat(2,1fr)}
  .grid.p figure:first-child,.grid.p.flip figure:first-child{grid-column:1 / span 2;grid-row:auto}
  .grid.s{grid-template-columns:repeat(2,1fr)}
- .grid.s figure:last-child{display:none}
+ .grid.four{grid-template-columns:repeat(2,1fr)}
+ .grid.trio{grid-template-columns:repeat(2,1fr)}
+ .more{grid-column:1 / span 2}
 }
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 """
@@ -191,47 +198,51 @@ box-shadow:0 30px 70px -30px #000;animation:spin 9s linear infinite}
 def hero(shop, s):
     t = s["theme"]
     h = s["sections"]
-    sec, idx = s["hero_img"] if isinstance(s["hero_img"], tuple) else (0, s["hero_img"])
-    first = h[sec][3][idx]
+    hi = PICKS[shop]["hero"]
+    first = h[hi // 5][3][hi % 5]
     src = img(first["src"], 1600)
     alt = e(first["alt"])
     name, line, place = e(s["name"]), e(s["hero_line"]), e(s["place"])
     if t == "dorsis":
         return f'''<section class="hero"><div class="copy"><h1>D'Orsi's</h1><p class="line">{line}</p>
-<p class="place">25 social images, made for {name} in {place}</p></div>
+<p class="place">Social images made for {name} in {place}</p></div>
 <div class="frame"><img src="{src}" alt="{alt}" fetchpriority="high"></div></section>'''
     if t == "florals":
         return f'''<section class="hero"><div class="copy"><h1>{line}</h1>
-<p class="line">25 social images of your bouquets, made for {name}.</p><p class="place">{place}</p></div>
+<p class="line">Social images of your bouquets, made for {name}.</p><p class="place">{place}</p></div>
 <div class="pic"><img src="{src}" alt="{alt}" fetchpriority="high"></div></section>'''
     if t == "spa":
         return f'''<section class="hero"><h1>{line}</h1>
-<p class="line">25 social images made for {name}, {place}.</p>
+<p class="line">Social images made for {name}, {place}.</p>
 <div class="arch"><img src="{src}" alt="{alt}" fetchpriority="high"></div></section>'''
     if t == "boxing":
         return f'''<section class="hero"><img src="{src}" alt="{alt}" fetchpriority="high"><div class="copy"><h1>{line}</h1>
-<p class="line">25 social images made for {name}.</p><p class="place">{place}</p></div></section><div class="ropes"></div>'''
+<p class="line">Social images made for {name}.</p><p class="place">{place}</p></div></section><div class="ropes"></div>'''
     if t == "coffee":
         return f'''<section class="hero"><div><h1>Good Coffee. <em>Good Music.</em> Good Company.</h1>
-<p class="line">25 social images made for {name}, from your menu and your record-badge logo.</p><p class="place">{place}</p></div>
+<p class="line">Social images made for {name}, from your menu and your record-badge logo.</p><p class="place">{place}</p></div>
 <div class="turntable" aria-hidden="false"><div class="record" aria-hidden="true"></div><div class="sleeve"><img src="{src}" alt="{alt}" fetchpriority="high"></div></div></section>'''
 
 
 def page(slug, s):
     t = s["theme"]
-    sets = []
-    for i, (title, sub, kind, items) in enumerate(s["sections"]):
-        flip = " flip" if (kind == "p" and i % 2 == 1 and t in ("florals", "coffee", "dorsis")) else ""
-        figs = "".join(
-            f'<figure><button class="shot" type="button" data-full="{e(img(it["src"], 1800))}" data-cap="{e(it["cap"])}">'
-            f'<img loading="lazy" decoding="async" src="{e(img(it["src"], 1100 if j == 0 and kind == "p" else 640))}" alt="{e(it["alt"])}"></button>'
-            f'<figcaption>{e(it["cap"])}</figcaption></figure>'
-            for j, it in enumerate(items)
-        )
-        ropes = '<div class="ropes thin"></div>' if t == "boxing" and i > 0 else ""
-        sets.append(f'{ropes}<section class="set wrap"><div class="set-head"><h2>{e(title)}</h2><p>{e(sub)}</p></div>'
-                    f'<div class="grid {kind}{flip}">{figs}</div></section>')
-    subj = urllib.parse.quote(f"{s['short']} - free video ad")
+    pk = PICKS[slug]
+    flat = lambda i: s["sections"][i // 5][3][i % 5]
+    def fig(it, kind):
+        return (f'<figure><button class="shot" type="button" data-full="{e(img(it["src"], 1800))}" data-cap="{e(it["cap"])}">'
+                f'<img loading="lazy" decoding="async" src="{e(img(it["src"], 900 if kind == "p" else 700))}" alt="{e(it["alt"])}"></button>'
+                f'<figcaption>{e(it["cap"])}</figcaption></figure>')
+    posts = "".join(fig(flat(i), "p") for i in pk["posts"])
+    stories = "".join(fig(flat(i), "s") for i in pk["stories"])
+    extra = 25 - 1 - len(pk["posts"]) - len(pk["stories"])
+    teaser = (f'<div class="more"><p class="more-n">{extra} more</p><p>Banners, story covers and product shots for your holiday posts are ready.'
+              f' Reply to our email and we\'ll send them, with a free 30-second video.</p></div>')
+    rope = '<div class="ropes thin"></div>' if t == "boxing" else ""
+    sets = [f'<section class="set wrap"><div class="set-head"><h2>Feed posts</h2><p>Ready to post, with your own words on them.</p></div>'
+            f'<div class="grid four">{posts}</div></section>',
+            f'{rope}<section class="set wrap"><div class="set-head"><h2>Story covers</h2><p>Vertical, for Instagram and Facebook Stories.</p></div>'
+            f'<div class="grid trio">{stories}{teaser}</div></section>']
+    subj = urllib.parse.quote(f"{s['short']} - free video")
     boxing_rope = '<div class="ropes thin"></div>' if t == "boxing" else ""
     return f'''<!doctype html>
 <html lang="en">
@@ -240,7 +251,7 @@ def page(slug, s):
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
 <title>Made for {e(s["name"])} by Autonna Studio</title>
-<meta name="description" content="25 sample social images made for {e(s["name"])}, {e(s["place"])}. Free to keep.">
+<meta name="description" content="Sample social images made for {e(s["name"])}, {e(s["place"])}. Free to keep.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?{FONTS[t]}&display=swap" rel="stylesheet">
 <style>{BASE_CSS}{THEME_CSS[t]}</style>
@@ -252,11 +263,10 @@ def page(slug, s):
 </section>
 <main>{"".join(sets)}</main>
 {boxing_rope}<section class="offer">
-<h2>Want a video ad too?</h2>
-<p>We'll make one 30-second video ad for {e(s["short"])}, free. If you like it, pay what you think it's worth.</p>
-<div class="price"><div><b>Free</b><span>your first video</span></div><div><b>$250</b><span>per video after that</span></div><div><b>$600</b><span>for three videos</span></div></div>
-<a class="cta" href="mailto:{SENDER["email"]}?subject={subj}">Email Bisi about a video</a>
-<p class="small">{SENDER["email"]}. Want the full-size image files? Just ask.</p>
+<h2>Want a short video too?</h2>
+<p>We'll make {e(s["short"])} one 30-second video for Instagram and Facebook, free. If you like it, pay what you think it's worth.</p>
+<a class="cta" href="mailto:{SENDER["email"]}?subject={subj}">Email Bisi about a free video</a>
+<p class="small">{SENDER["email"]}. Want the full-size files, or the other images? Just ask.</p>
 </section>
 <footer>{SENDER["name"]}, {SENDER["co"]}<br>{SENDER["addr"]}<br>
 These are AI-generated sample images. Autonna is not affiliated with {e(s["name"])}.<br>
