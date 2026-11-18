@@ -1,0 +1,11 @@
+# Lets Netlify Image CDN resize the sample images (stored on Higgsfield's CDN)
+# so each page loads ~200 KB images instead of 10 MB originals.
+[images]
+  remote_images = ["https://d8j0ntlcm91z4\\.cloudfront\\.net/.*"]
+
+# Keep the build tools and full-size previews off the live site.
+[[redirects]]
+  from = "/build/*"
+  to = "/404.html"
+  status = 404
+  force = true
