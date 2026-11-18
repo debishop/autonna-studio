@@ -11,8 +11,9 @@ import urllib.parse
 sys.path.insert(0, os.path.dirname(__file__))
 from data import SHOPS, PICKS  # noqa: E402
 from data6 import SHOPS6, PICKS6  # noqa: E402
-SHOPS = {**SHOPS, **SHOPS6}
-PICKS = {**PICKS, **PICKS6}
+from data7 import SHOPS7, THEMES7, FONTS7, KIND7  # noqa: E402
+SHOPS = {**SHOPS, **SHOPS6, **SHOPS7}
+PICKS = {**PICKS, **PICKS6, **{k: {'hero': 0, 'posts': [1, 2, 3, 4], 'stories': [5, 6], 'extra': 18} for k in SHOPS7}}
 ONLY = sys.argv[2:] if len(sys.argv) > 2 else None
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -262,7 +263,9 @@ THEME_CSS.update({
 --display:'Cinzel',Georgia,serif;--body:'Montserrat',system-ui,sans-serif;--gap:10px;--radius:0;--btn-radius:0;--h1:clamp(44px,6.4vw,100px)}
 .hero h1{color:var(--accent)}.shot{outline:1px solid var(--line)}.offer{border-top:1px solid var(--accent);border-bottom:1px solid var(--accent)}""",
 })
-KIND = {"prime": "full", "dojo": "full", "nabod": "full", "labon": "split", "fe": "split", "legrand": "split", "bb": "split",
+THEME_CSS.update(THEMES7)
+FONTS.update(FONTS7)
+KIND = {**KIND7, "prime": "full", "dojo": "full", "nabod": "full", "labon": "split", "fe": "split", "legrand": "split", "bb": "split",
         "nneka": "arch", "paw": "arch", "yo": "arch"}
 
 
