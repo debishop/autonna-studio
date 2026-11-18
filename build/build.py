@@ -51,7 +51,7 @@ a{color:inherit}
 .bar strong{font-weight:600;color:var(--ink)}
 .wrap{max-width:1240px;margin:0 auto;padding:0 clamp(20px,5vw,64px)}
 .intro{max-width:760px;margin:0 auto;padding:clamp(56px,9vw,112px) clamp(20px,5vw,64px) 24px;text-align:center}
-.intro .lead{font:400 clamp(22px,2.6vw,30px)/1.4 var(--display);margin:0 0 28px}
+.intro .lead{font:400 clamp(22px,2.6vw,30px)/1.4 var(--display);margin:0}
 .made{display:inline-block;text-align:left;font-size:15px;color:var(--muted);max-width:640px}
 .made summary{cursor:pointer;color:var(--ink);font-weight:600;list-style-position:inside}
 .made p{margin:10px 0 0}
@@ -249,7 +249,7 @@ def page(slug, s):
 <header class="bar"><span><strong>Autonna Studio</strong></span><span>Made for {e(s["name"])}</span></header>
 {hero(slug, s)}
 <section class="intro"><p class="lead">{e(s["intro"])}</p>
-<details class="made"><summary>How these were made</summary><p>{e(s["made"])}</p></details></section>
+</section>
 <main>{"".join(sets)}</main>
 {boxing_rope}<section class="offer">
 <h2>Want a video ad too?</h2>
