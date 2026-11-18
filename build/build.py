@@ -10,6 +10,10 @@ import urllib.parse
 
 sys.path.insert(0, os.path.dirname(__file__))
 from data import SHOPS, PICKS  # noqa: E402
+from data6 import SHOPS6, PICKS6  # noqa: E402
+SHOPS = {**SHOPS, **SHOPS6}
+PICKS = {**PICKS, **PICKS6}
+ONLY = sys.argv[2:] if len(sys.argv) > 2 else None
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MODE = "preview" if len(sys.argv) > 1 and sys.argv[1] == "preview" else "prod"
@@ -38,6 +42,16 @@ FONTS = {
     "spa": "family=Gilda+Display&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600",
     "boxing": "family=Anton&family=Archivo:wght@400;600",
     "coffee": "family=Fraunces:ital,opsz,wght,SOFT@0,9..144,400,100;0,9..144,600,100;1,9..144,400,100&family=DM+Sans:opsz,wght@9..40,400;9..40,600",
+    "prime": "family=Bebas+Neue&family=Barlow:wght@400;600",
+    "labon": "family=Libre+Caslon+Display&family=Karla:wght@400;600",
+    "nneka": "family=Playfair+Display:ital,wght@0,400;1,400&family=Jost:wght@400;600",
+    "dojo": "family=Oswald:wght@500&family=Source+Sans+3:wght@400;600",
+    "fe": "family=Cormorant+Garamond:ital,wght@0,500;1,500&family=Lato:wght@400;700",
+    "paw": "family=Fredoka:wght@500;600&family=Nunito:wght@400;700",
+    "legrand": "family=Libre+Baskerville:ital@0;1&family=Work+Sans:wght@400;600",
+    "yo": "family=Gloock&family=Quicksand:wght@400;600",
+    "bb": "family=Marcellus&family=Jost:wght@400;600",
+    "nabod": "family=Cinzel:wght@500&family=Montserrat:wght@400;600",
 }
 
 BASE_CSS = """
@@ -195,14 +209,80 @@ box-shadow:0 30px 70px -30px #000;animation:spin 9s linear infinite}
 }
 
 
+GENERIC = """
+.hero.full{position:relative;min-height:min(94vh,900px);display:flex;align-items:flex-end;overflow:hidden;background:#000}
+.hero.full>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 35%}
+.hero.full::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,var(--bg) 3%,rgba(0,0,0,.2) 55%,rgba(0,0,0,.5))}
+.hero.full .copy{position:relative;z-index:2;padding:clamp(28px,5vw,72px);max-width:1100px}
+.hero.split{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:clamp(24px,5vw,80px);padding:clamp(32px,5vw,80px) clamp(20px,5vw,64px);max-width:1360px;margin:0 auto;min-height:min(90vh,860px)}
+.hero.split .pic{position:relative}
+.hero.split .pic img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--radius)}
+.hero.arch{text-align:center;padding:clamp(40px,6vw,80px) clamp(20px,5vw,64px) 0}
+.hero.arch .pic{width:min(500px,82vw);margin:clamp(32px,5vw,56px) auto 0;border-radius:var(--arch);overflow:hidden;aspect-ratio:4/5}
+.hero.arch .pic img{width:100%;height:100%;object-fit:cover}
+.hero h1{margin:0;font:400 var(--h1)/1 var(--display)}
+.hero .line{margin:22px 0 0;color:var(--muted);max-width:44ch}
+.hero.arch .line{margin-left:auto;margin-right:auto}
+.hero .place{margin-top:8px;font-weight:600}
+@media (max-width:820px){.hero.split{grid-template-columns:1fr}.hero.split .pic{order:-1}}
+"""
+
+THEME_CSS.update({
+ "prime": """:root{--bg:#0B0B0B;--ink:#F2F2F2;--muted:#A9A9A9;--accent:#FF6A13;--soft:#161616;--line:#2A2A2A;--panel:#FF6A13;--panel-ink:#0B0B0B;--cta:#0B0B0B;--cta-ink:#fff;
+--display:'Bebas Neue',Impact,sans-serif;--body:'Barlow',system-ui,sans-serif;--gap:6px;--radius:0;--btn-radius:0;--h1:clamp(72px,12vw,200px)}
+.hero h1{font-style:italic;line-height:.9}.hero .place{color:var(--accent)}.set-head h2{font-size:clamp(40px,5vw,76px)}.offer h2{font-size:clamp(48px,7vw,110px)}
+.set-head{border-bottom:3px solid var(--accent)}""",
+ "labon": """:root{--bg:#F7F0E6;--ink:#43271C;--muted:#7D6455;--accent:#B3262E;--soft:#EDE2D2;--line:#DCCBB4;--panel:#43271C;--panel-ink:#F7F0E6;--cta:#B3262E;--cta-ink:#fff;
+--display:'Libre Caslon Display',Georgia,serif;--body:'Karla',system-ui,sans-serif;--gap:16px;--radius:4px;--btn-radius:999px;--h1:clamp(52px,6.4vw,96px)}
+.hero.split .pic::after{content:"";position:absolute;inset:-14px 14px 14px -14px;border:1px solid var(--accent);z-index:-1}
+.hero .place{color:var(--accent)}""",
+ "nneka": """:root{--bg:#FBEEF0;--ink:#5A1730;--muted:#8E5B6B;--accent:#B88A3E;--soft:#F5DDE2;--line:#EBCBD2;--panel:#5A1730;--panel-ink:#FBEEF0;--cta:#E8C77F;--cta-ink:#3B0E1F;
+--display:'Playfair Display',Georgia,serif;--body:'Jost',system-ui,sans-serif;--gap:16px;--radius:18px;--btn-radius:999px;--h1:clamp(50px,7vw,104px);--arch:50%}
+.hero h1{font-style:italic}.hero.arch .pic{border:6px solid #fff;box-shadow:0 0 0 1px var(--accent),0 30px 70px -40px rgba(90,23,48,.5)}""",
+ "dojo": """:root{--bg:#0A0A0A;--ink:#F4F1EC;--muted:#A6A19A;--accent:#D21F26;--soft:#161616;--line:#2B2B2B;--panel:#F4F1EC;--panel-ink:#0A0A0A;--cta:#D21F26;--cta-ink:#fff;
+--display:'Oswald',Impact,sans-serif;--body:'Source Sans 3',system-ui,sans-serif;--gap:6px;--radius:0;--btn-radius:0;--h1:clamp(56px,9vw,150px)}
+.hero h1{text-transform:uppercase;line-height:.95}.hero .copy{border-left:10px solid var(--accent);padding-left:clamp(24px,4vw,56px)}
+.set-head h2{text-transform:uppercase}.offer h2{text-transform:uppercase}""",
+ "fe": """:root{--bg:#EEF2EA;--ink:#2E3A2B;--muted:#62705D;--accent:#D9692A;--soft:#E1E8DB;--line:#CFD9C8;--panel:#2E3A2B;--panel-ink:#EEF2EA;--cta:#D9692A;--cta-ink:#fff;
+--display:'Cormorant Garamond',Georgia,serif;--body:'Lato',system-ui,sans-serif;--gap:14px;--radius:999px 999px 8px 8px;--btn-radius:999px;--h1:clamp(52px,6.6vw,100px)}
+.hero h1{font-style:italic;color:var(--accent)}.shot{border-radius:8px}.hero.split .pic img{border-radius:999px 999px 8px 8px}""",
+ "paw": """:root{--bg:#FFFBEA;--ink:#1F2A12;--muted:#55603F;--accent:#6FAE1F;--soft:#F1F6DD;--line:#E2EBC4;--panel:#8DC63F;--panel-ink:#1F2A12;--cta:#FFC72C;--cta-ink:#1F2A12;
+--display:'Fredoka',system-ui,sans-serif;--body:'Nunito',system-ui,sans-serif;--gap:16px;--radius:24px;--btn-radius:999px;--h1:clamp(46px,6.4vw,92px);--arch:50%}
+.hero.arch{background:radial-gradient(circle at 50% 100%,#DDF0B8 0 40%,transparent 41%)}.hero h1{max-width:16ch;margin:0 auto}
+.hero.arch .pic{border:10px solid #FFC72C}""",
+ "legrand": """:root{--bg:#F3E9DC;--ink:#3B2416;--muted:#76604F;--accent:#8B5A2B;--soft:#E9DBC8;--line:#D9C6AE;--panel:#3B2416;--panel-ink:#F3E9DC;--cta:#C89B5E;--cta-ink:#2A180D;
+--display:'Libre Baskerville',Georgia,serif;--body:'Work Sans',system-ui,sans-serif;--gap:14px;--radius:3px;--btn-radius:3px;--h1:clamp(44px,5.6vw,84px)}
+.hero.split .pic img{box-shadow:24px 24px 0 var(--soft)}.hero .place{color:var(--accent)}""",
+ "yo": """:root{--bg:#FAF7F0;--ink:#2F4A35;--muted:#6B7D6E;--accent:#7FA285;--soft:#EEF1E8;--line:#DDE4D6;--panel:#2F4A35;--panel-ink:#FAF7F0;--cta:#E9C9C6;--cta-ink:#2F4A35;
+--display:'Gloock',Georgia,serif;--body:'Quicksand',system-ui,sans-serif;--gap:16px;--radius:12px;--btn-radius:999px;--h1:clamp(56px,8vw,124px);--arch:999px 999px 12px 12px}""",
+ "bb": """:root{--bg:#F6F0E8;--ink:#3A2A20;--muted:#7A6A5D;--accent:#B08D57;--soft:#EDE4D8;--line:#DED1BF;--panel:#3A2A20;--panel-ink:#F6F0E8;--cta:#B08D57;--cta-ink:#fff;
+--display:'Marcellus',Georgia,serif;--body:'Jost',system-ui,sans-serif;--gap:14px;--radius:2px;--btn-radius:2px;--h1:clamp(44px,5.4vw,80px)}
+.hero.split .pic{padding:14px;border:1px solid var(--accent)}""",
+ "nabod": """:root{--bg:#070707;--ink:#EDE3CF;--muted:#A89C86;--accent:#C9A45C;--soft:#141210;--line:#2C261C;--panel:#141210;--panel-ink:#EDE3CF;--cta:#C9A45C;--cta-ink:#070707;
+--display:'Cinzel',Georgia,serif;--body:'Montserrat',system-ui,sans-serif;--gap:10px;--radius:0;--btn-radius:0;--h1:clamp(44px,6.4vw,100px)}
+.hero h1{color:var(--accent)}.shot{outline:1px solid var(--line)}.offer{border-top:1px solid var(--accent);border-bottom:1px solid var(--accent)}""",
+})
+KIND = {"prime": "full", "dojo": "full", "nabod": "full", "labon": "split", "fe": "split", "legrand": "split", "bb": "split",
+        "nneka": "arch", "paw": "arch", "yo": "arch"}
+
+
 def hero(shop, s):
     t = s["theme"]
     h = s["sections"]
     hi = PICKS[shop]["hero"]
-    first = h[hi // 5][3][hi % 5]
+    first = [it for sec in h for it in sec[3]][hi]
     src = img(first["src"], 1600)
     alt = e(first["alt"])
     name, line, place = e(s["name"]), e(s["hero_line"]), e(s["place"])
+    if t in KIND:
+        k = KIND[t]
+        copy = f'<div class="copy"><h1>{line}</h1><p class="line">Social images made for {name}.</p><p class="place">{place}</p></div>'
+        if k == "full":
+            return f'<section class="hero full"><img src="{src}" alt="{alt}" fetchpriority="high">{copy}</section>'
+        if k == "split":
+            return f'<section class="hero split">{copy}<div class="pic"><img src="{src}" alt="{alt}" fetchpriority="high"></div></section>'
+        return (f'<section class="hero arch"><h1>{line}</h1><p class="line">Social images made for {name}, {place}.</p>'
+                f'<div class="pic"><img src="{src}" alt="{alt}" fetchpriority="high"></div></section>')
     if t == "dorsis":
         return f'''<section class="hero"><div class="copy"><h1>D'Orsi's</h1><p class="line">{line}</p>
 <p class="place">Social images made for {name} in {place}</p></div>
@@ -227,14 +307,15 @@ def hero(shop, s):
 def page(slug, s):
     t = s["theme"]
     pk = PICKS[slug]
-    flat = lambda i: s["sections"][i // 5][3][i % 5]
+    allit = [it for sec in s["sections"] for it in sec[3]]
+    flat = lambda i: allit[i]
     def fig(it, kind):
         return (f'<figure><button class="shot" type="button" data-full="{e(img(it["src"], 1800))}" data-cap="{e(it["cap"])}">'
                 f'<img loading="lazy" decoding="async" src="{e(img(it["src"], 900 if kind == "p" else 700))}" alt="{e(it["alt"])}"></button>'
                 f'<figcaption>{e(it["cap"])}</figcaption></figure>')
     posts = "".join(fig(flat(i), "p") for i in pk["posts"])
     stories = "".join(fig(flat(i), "s") for i in pk["stories"])
-    extra = 25 - 1 - len(pk["posts"]) - len(pk["stories"])
+    extra = pk.get("extra", 25 - 1 - len(pk["posts"]) - len(pk["stories"]))
     teaser = (f'<div class="more"><p class="more-n">{extra} more</p><p>Banners, story covers and product shots for your holiday posts are ready.'
               f' Reply to our email and we\'ll send them, with a free 30-second video.</p></div>')
     rope = '<div class="ropes thin"></div>' if t == "boxing" else ""
@@ -254,7 +335,7 @@ def page(slug, s):
 <meta name="description" content="Sample social images made for {e(s["name"])}, {e(s["place"])}. Free to keep.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?{FONTS[t]}&display=swap" rel="stylesheet">
-<style>{BASE_CSS}{THEME_CSS[t]}</style>
+<style>{BASE_CSS}{GENERIC if t in KIND else ""}{THEME_CSS[t]}</style>
 </head>
 <body>
 <header class="bar"><span><strong>Autonna Studio</strong></span><span>Made for {e(s["name"])}</span></header>
@@ -285,6 +366,8 @@ d.addEventListener('click',ev=>{{if(ev.target===d)d.close();}});}})();
 
 def main():
     for slug, s in SHOPS.items():
+        if ONLY and slug not in ONLY:
+            continue
         if MODE == "preview":
             out = os.path.join(ROOT, "build", "preview", f"{slug}.html")
         else:

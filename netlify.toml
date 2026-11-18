@@ -105,3 +105,183 @@
   to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_163455_3c829c52-aef6-40c0-b925-69cbac4382df.png&w=1080&q=82&fm=jpg"
   status = 200
   force = true
+
+[[redirects]]
+  from = "/email/prime-boxing-knockout-fitness.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_184556_db766dc8-1ffd-414c-8558-f9f87f1e0328.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/prime-boxing-womens-boxing.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_184555_edf61f81-5a05-40bc-9e2a-5a8f351dea12.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/prime-boxing-now-open.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_184557_c9e4cf10-5a50-4854-9736-cb25ab2f67f2.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/la-bon-whoopie-pie.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_184554_c30a467a-9d51-4b48-8657-c218eed6723a.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/la-bon-thanksgiving.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_184554_7f52cc9e-dcf9-4dd8-84ef-714d4aafaaa9.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/la-bon-cranberry-sourdough.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_184554_f0f3f146-19e5-4da6-be8c-e13db2f38149.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/nnekas-red-velvet.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_184633_dc7a5aaf-f2d9-4d16-924f-ac74cc43f2b4.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/nnekas-luxury-box-cake.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_185355_5b827904-77b1-49b7-b827-9a1bf7c1977c.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/nnekas-strawberry-crunch.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_184633_4f8cbd79-a797-447b-b81d-7c83dddbdeab.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/woodbridge-martial-arts-respect-focus-integrity.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_184634_72143c3c-287a-47c4-9f9b-3fe7e2919cb8.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/woodbridge-martial-arts-kids-martial-arts.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_184657_9e0b56fe-2ef1-4e05-afdc-90c133d20d0c.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/woodbridge-martial-arts-free-class.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_184657_12e1dc70-ed7b-4705-9786-d2ad8673ed30.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/floral-expressions-fall-flowers.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_184700_dc73aa4a-3f31-41b8-a05c-081747a805d3.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/floral-expressions-pumpkin.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_184659_2abadf65-903b-4346-bd30-fd39145d7824.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/floral-expressions-christmas-flowers.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_184701_329a3ce6-44cf-4273-8b4b-65ac054a0da9.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/golden-paw-pets-our-own.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_184733_8d7678a8-eb4a-48cf-a5c2-7ce467e12cac.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/golden-paw-de-shedding.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_184734_2fd8f78e-eabf-462f-bf3f-45f7be0f0589.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/golden-paw-full-groom.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_184735_73d0a587-f6ec-43b7-a554-16175fc10d72.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/legrand-latte.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_184732_287a0ae0-4605-430f-9f3a-10baa4378847.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/legrand-coffee-comfort.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_184734_564baa5c-ccf3-4fc1-97f7-e52ffe85d5bc.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/legrand-signature-roasts.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_184736_732bdc3e-b8f6-40b0-ba08-0d1e1a3de243.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/awesomeyos-wedding-cake.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_184757_2624c055-ff11-412b-b0a8-9b8272ec66e2.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/awesomeyos-baked-with-love.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_184759_1f47de56-9556-4e3a-a158-c7364f79b442.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/awesomeyos-special-event.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_184759_0961d92b-f753-4203-a4b4-785c82c483a5.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/beauty-boutique-storefront.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_184757_bc160d8c-2267-444b-ae5b-c970e83dc04a.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/beauty-boutique-head-spa.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_184800_dbefac35-a18e-4c7d-adac-dd622a9180a7.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/beauty-boutique-lash-extensions.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_184756_4952576d-4eae-4b28-ac34-233cdca3e66c.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/nabod-chair.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_184818_275feeeb-a09a-4586-99cd-9e6131e33a6e.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/nabod-vip-haircut.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_184819_7eb9f0f1-2b4f-40ed-a470-71f9ba47a61b.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/nabod-full-experience.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_184816_973b55cf-6539-40d9-ae46-23b6b2abfd6d.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
