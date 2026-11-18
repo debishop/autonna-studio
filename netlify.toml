@@ -9,3 +9,99 @@
   to = "/404.html"
   status = 404
   force = true
+
+# --- email images ---
+[[headers]]
+  for = "/email/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
+
+[[redirects]]
+  from = "/email/dorsis-red-velvet.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_153753_2f06961f-580b-4769-8a45-8c2c5394e4ad.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/dorsis-thanksgiving.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_160449_37bb81a1-9d11-4858-9c24-b5779f90b9b6.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/dorsis-mini-pumpkin-cheesecake.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_160447_a1455ba0-8c34-4542-8134-0a3778b87e2d.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/rich-florals-initial-rose-bouquet.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_162249_41571256-792d-476d-8d9a-69a3a07ecec8.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/rich-florals-luxury-bouquets.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_162249_b8a21ee1-23ef-430d-96d9-ac8d3eba01e4.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/rich-florals-i-love-you-bouquet.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_162249_56ed771e-c93c-488b-9cd2-246385ed4e38.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/lavish-tails-doodle.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_162642_1214f3e7-5e4d-466e-adfe-492732049b6b.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/lavish-tails-spa-day.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_162706_4bb5fbbd-4ff5-40be-83b6-d44dd9671975.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/lavish-tails-cageless-grooming.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_162707_3c0f978e-a3bb-441d-bc5b-ef552615ffc9.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/hit-em-up-gloves-on-the-ropes.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_162917_236de2cf-7949-4d7c-acab-7f3b9e20056a.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/hit-em-up-family-training.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_162944_64e51b65-6c7e-48c2-9ff0-0af7fd443186.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/hit-em-up-gloves.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_162943_a9f474f6-55ff-46de-9d40-a1ae6003416f.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/rnbeans-butter-love-latte.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_163420_3c7162bd-00ec-45b0-b7e6-cc81d3f3b249.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/rnbeans-box-of-joe.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_163451_879092e5-4bbb-4f31-b461-c324100adfbe.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/rnbeans-cream-brulee-pour.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_163455_3c829c52-aef6-40c0-b925-69cbac4382df.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
