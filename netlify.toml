@@ -501,3 +501,309 @@
   to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_231507_b5664692-6bfe-4f1d-95f4-a684f94bf35b.png&w=1080&q=82&fm=jpg"
   status = 200
   force = true
+
+[[redirects]]
+  from = "/email/e-e-flowers-your-wedding-is-our-business.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_235324_ebfaedce-d452-4a0e-8369-0446cf284cb0.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/e-e-flowers-birthdays.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_235325_00847704-7bf8-4651-89b0-9ca2ef0e46cb.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/e-e-flowers-weddings-events.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_235325_08be7d80-83d2-4bf9-9c87-b8299d4e578f.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/juice-hub-cold-pressed.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_235324_cc60b507-9e7d-484b-9e56-654fc0508d23.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/juice-hub-acai-bowls.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_235325_5580aeeb-6a23-4479-af2a-89b82cefe2b0.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/juice-hub-coconut-dreamsicle.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_235324_ce3c43f5-271d-40e4-a8c3-fc4fed9e137f.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/soul-bowls-stay-classy.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_235404_7d7ae214-b351-4e52-83bb-c79d4901e441.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/soul-bowls-blueberry-creme-soul-brew.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_235403_e27e95ba-34f7-40d3-ad80-09fc0f220940.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/soul-bowls-feelin-the-beet.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_235402_8139f169-1bcb-4b29-9612-4b6aa9ac7dc0.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/nj-dog-barbers-nj-dog-barbers.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_235404_5658a52a-fd8d-4dcf-adda-2b6d66457a2d.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/nj-dog-barbers-haircuts.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_235404_39e9a8d8-e37c-4af5-b2d1-b049d23786f6.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/nj-dog-barbers-bath-brush.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_235434_d43a2010-274c-4593-ad41-1a278a716799.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/house-of-flowers-roses-for-every-occasion.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_235435_a9cc1f49-9393-4132-9978-cf90c7e8a3fa.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/house-of-flowers-fresh-arrangements.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_235434_511a41a7-19ca-4c71-a5a6-e4f13f75eaf6.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/house-of-flowers-delivered-fresh.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_235436_c59c28f9-6c7f-44e3-b232-d6d847538daf.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/cindys-flowers-wreaths.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_235507_615d8732-d832-4df7-bd6d-d10321578273.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/cindys-flowers-custom-arrangements.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_235508_758b45df-8d4e-41fc-a29e-cd617da2ac1e.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/cindys-flowers-same-day-delivery.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_235509_48ed0485-fbdc-456e-8418-6b5a842aae27.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/torres-cafe-empanadas.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_235508_35d816b0-9061-4109-9d6e-e0357b01f783.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/torres-cafe-mofongo-con-camarones.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_235508_46e813c8-ad20-4970-a06d-d21682c573ca.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/torres-cafe-camarones-al-ajillo.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_235508_af29b27e-0003-4073-bb96-d3f42f170ac8.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/pampered-paws-dogs-cats.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_235544_70617095-03c6-4b16-9e6d-71d7d173963a.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/pampered-paws-haircuts.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_235542_494dcdf4-406b-430a-9a17-bdc91f47390c.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/pampered-paws-spa-treatment.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_235542_987f4472-ece0-404b-a5a4-eb6ef0f1e745.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/kuchies-kuchie-s-alpine-florist.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_235543_a4dbe0de-820d-4598-82dd-3f7f2dce8e87.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/kuchies-holiday-centerpieces.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_235543_c818d0db-41e3-40fb-bb0d-9c845df35932.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/kuchies-fresh-flowers.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_235616_bef87704-0b2a-4a34-af74-65bf8969ba4c.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/la-belle-creme-chocolate-cake.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_235617_b0e265a6-75c7-4d00-8fdc-6c6488e9aa25.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/la-belle-creme-birthday-cakes.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_235617_6a2a2e38-d134-444b-bb1d-103b4d5de414.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/la-belle-creme-celebration-cakes.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_235617_ec2ef005-dc04-4e68-a50b-ba01d724efa2.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/mosaic-hair-salon-spa.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_235616_dfc997b9-25f0-4390-b9c9-7bd509694f27.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/mosaic-massage.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_235648_faba4181-f278-4124-8389-9066ff792669.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/mosaic-japanese-head-spa.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_235649_6aefc88a-e5a0-4658-85df-d95c94198c68.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/shades-fresh-fades.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_235649_632c0d75-583c-4ff0-83e9-34f98b3b9440.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/shades-manicures-pedicures.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_235648_d56419cb-04bf-4ff8-98c9-a46889c1a129.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/shades-beard-trims.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_235648_1416a479-5c0f-4ea9-b9e4-6ce40009157d.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/breeds-breeds-spa-salon.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_235722_b42f573e-85d1-4c7e-bcba-277bf1cb36aa.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/breeds-haircuts.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_235721_dca1a47b-2d0d-472c-abee-c390c809218e.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/breeds-de-shedding.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_235722_d9e57d86-8298-419f-99d4-40cdb3e8ed9a.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/spaw-and-stay-spaw-and-stay.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_235722_d87e0cb0-92e9-45d2-ba80-4577a7af9715.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/spaw-and-stay-a-cozy-place-to-stay.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_235722_1a12ee0a-0052-464a-a732-4890c21463b6.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/spaw-and-stay-grooming.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_235722_6bdadcff-7da0-4459-bb78-5d02219b02ec.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/venus-detailing-auto-detailing.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261119_000451_bb08602e-ea0f-4fe9-98f8-286f10decf2b.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/venus-detailing-interior-detailing.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_235755_a5761bde-a3a5-4ab3-8f95-05f8e12edd39.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/venus-detailing-exterior-detailing.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_235754_7b65f4df-5a20-461d-8717-8cdda4f87f42.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/ak-studios-ak-studios-barbershop.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_235755_f3da1e90-71c8-40e8-a15d-3e0a32f6c80b.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/ak-studios-haircuts.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_235753_5785be1c-04de-45dc-bc17-6fc51123c278.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/ak-studios-beard-trims.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_235826_6f3730fe-5d17-4ac1-8366-82d9125a3d80.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/laxmi-flowers-fresh-flowers.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_235827_62c1eb67-40f7-4620-8482-0192e4866db6.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/laxmi-flowers-bouquets.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_235826_597d6c55-c3f6-428c-a4fe-1e9f3ca0ceba.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/laxmi-flowers-celebrations.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_235826_b510dee0-e83c-45c8-886f-c86310a91619.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
