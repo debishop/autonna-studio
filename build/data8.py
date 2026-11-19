@@ -503,7 +503,7 @@ SHOPS8 = {
      {
       "src": "https://d8j0ntlcm91z4.cloudfront.net/user_3Esk8OYU2FjG0AiTaNIrZKS91Pk/hf_20261118_235617_6a2a2e38-d134-444b-bb1d-103b4d5de414.png",
       "cap": "Birthday Cakes",
-      "alt": "an elegant blush pink birthday cake with buttercream rosettes and gold accents, no writing on the cake"
+      "alt": "an elegant blush pink birthday cake with buttercream rosettes and gold accents"
      },
      {
       "src": "https://d8j0ntlcm91z4.cloudfront.net/user_3Esk8OYU2FjG0AiTaNIrZKS91Pk/hf_20261118_235616_a9988ef1-4346-46c2-9e97-413e0292939f.png",
@@ -513,7 +513,7 @@ SHOPS8 = {
      {
       "src": "https://d8j0ntlcm91z4.cloudfront.net/user_3Esk8OYU2FjG0AiTaNIrZKS91Pk/hf_20261118_235617_ec2ef005-dc04-4e68-a50b-ba01d724efa2.png",
       "cap": "Celebration Cakes",
-      "alt": "a white celebration cake with fresh flowers on a cake stand, no writing on the cake"
+      "alt": "a white celebration cake with fresh flowers on a cake stand"
      },
      {
       "src": "https://d8j0ntlcm91z4.cloudfront.net/user_3Esk8OYU2FjG0AiTaNIrZKS91Pk/hf_20261118_235615_4a2e7c68-f310-4741-ab60-dc6919f2a77a.png",
@@ -609,7 +609,7 @@ SHOPS8 = {
      {
       "src": "https://d8j0ntlcm91z4.cloudfront.net/user_3Esk8OYU2FjG0AiTaNIrZKS91Pk/hf_20261118_235648_d56419cb-04bf-4ff8-98c9-a46889c1a129.png",
       "cap": "Manicures & Pedicures",
-      "alt": "a manicure station with neat rows of nail polish bottles and a gel lamp, no people"
+      "alt": "a manicure station with neat rows of nail polish bottles and a gel lamp"
      },
      {
       "src": "https://d8j0ntlcm91z4.cloudfront.net/user_3Esk8OYU2FjG0AiTaNIrZKS91Pk/hf_20261118_235649_ab2a2c94-eaef-46d1-973b-c323c9aff4a7.png",
@@ -757,23 +757,23 @@ SHOPS8 = {
     [
      {
       "src": "https://d8j0ntlcm91z4.cloudfront.net/user_3Esk8OYU2FjG0AiTaNIrZKS91Pk/hf_20261118_235754_63d1684f-fdfa-477d-8dc6-9468eb503dc3.png",
-      "cap": "A glossy black car hood with water beading and droplets frozen mid-air, no badges",
-      "alt": "a glossy black car hood with water beading and droplets frozen mid-air, no badges"
+      "cap": "A glossy black car hood with water beading and droplets frozen mid-air",
+      "alt": "a glossy black car hood with water beading and droplets frozen mid-air"
      },
      {
       "src": "https://d8j0ntlcm91z4.cloudfront.net/user_3Esk8OYU2FjG0AiTaNIrZKS91Pk/hf_20261119_000451_bb08602e-ea0f-4fe9-98f8-286f10decf2b.png",
       "cap": "Auto Detailing",
-      "alt": "a gleaming freshly detailed dark sedan in a studio with reflections, no badges or plates"
+      "alt": "a gleaming freshly detailed dark sedan in a studio with reflections"
      },
      {
       "src": "https://d8j0ntlcm91z4.cloudfront.net/user_3Esk8OYU2FjG0AiTaNIrZKS91Pk/hf_20261118_235755_a5761bde-a3a5-4ab3-8f95-05f8e12edd39.png",
       "cap": "Interior Detailing",
-      "alt": "a spotless car interior with clean leather seats and dashboard, no logos"
+      "alt": "a spotless car interior with clean leather seats and dashboard"
      },
      {
       "src": "https://d8j0ntlcm91z4.cloudfront.net/user_3Esk8OYU2FjG0AiTaNIrZKS91Pk/hf_20261118_235754_294d0e34-cb05-4106-8619-3c95a86426ea.png",
-      "cap": "A foam cannon covering a car in thick white foam, no badges",
-      "alt": "a foam cannon covering a car in thick white foam, no badges"
+      "cap": "A foam cannon covering a car in thick white foam",
+      "alt": "a foam cannon covering a car in thick white foam"
      },
      {
       "src": "https://d8j0ntlcm91z4.cloudfront.net/user_3Esk8OYU2FjG0AiTaNIrZKS91Pk/hf_20261118_235754_7b65f4df-5a20-461d-8717-8cdda4f87f42.png",
@@ -783,12 +783,12 @@ SHOPS8 = {
      {
       "src": "https://d8j0ntlcm91z4.cloudfront.net/user_3Esk8OYU2FjG0AiTaNIrZKS91Pk/hf_20261118_235755_bd9fb191-ff74-45b5-a595-6e50324f24ac.png",
       "cap": "That showroom shine",
-      "alt": "a shiny clean wheel and tire close-up, no brand logos"
+      "alt": "a shiny clean wheel and tire close-up"
      },
      {
       "src": "https://d8j0ntlcm91z4.cloudfront.net/user_3Esk8OYU2FjG0AiTaNIrZKS91Pk/hf_20261119_000450_40824861-d382-413e-9217-25752df5ca06.png",
       "cap": "420 Hudson Blvd, Avenel",
-      "alt": "a freshly detailed car in a clean garage at night, no badges or plates"
+      "alt": "a freshly detailed car in a clean garage at night"
      }
     ]
    ]
@@ -841,7 +841,7 @@ SHOPS8 = {
      {
       "src": "https://d8j0ntlcm91z4.cloudfront.net/user_3Esk8OYU2FjG0AiTaNIrZKS91Pk/hf_20261118_235827_fc57af98-4362-4cf1-b98c-8c1a40609374.png",
       "cap": "18 New St, Metuchen",
-      "alt": "a modern barbershop storefront at dusk, no signage text"
+      "alt": "a modern barbershop storefront at dusk"
      }
     ]
    ]

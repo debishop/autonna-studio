@@ -48,8 +48,9 @@ for slug, look, shots in S:
     name, short, place, email, hero_line, th, kind, (bg, ink, acc, soft, line, cta, ctaink, fam, disp, body) = META[slug]
     items, labeled = [], []
     for j, (ar, scene, h, sub) in enumerate(shots):
-        cap = h if h else scene[0].upper() + scene[1:]
-        items.append({'src': B + U[idx] + '.png', 'cap': cap, 'alt': scene})
+        clean = re.sub(r',?\s*no (badges|brand logos|logos|people|writing|signage)[^,]*', '', scene).strip()
+        cap = h if h else clean[0].upper() + clean[1:]
+        items.append({'src': B + U[idx] + '.png', 'cap': cap, 'alt': clean})
         if h and j in (1, 2, 4):
             labeled.append([re.sub(r'[^a-z0-9]+', '-', unicodedata.normalize('NFKD', h).encode('ascii','ignore').decode().lower()).strip('-'), j])
         idx += 1
