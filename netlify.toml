@@ -807,3 +807,111 @@
   to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261118_235826_b510dee0-e83c-45c8-886f-c86310a91619.png&w=1080&q=82&fm=jpg"
   status = 200
   force = true
+
+[[redirects]]
+  from = "/email/costas-cafe-pasteis-de-nata.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261119_003124_996d3814-1a47-4ead-8d8c-086c48175922.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/costas-cafe-fresh-pastries.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261119_003124_a1d04de8-1efe-4269-af2b-025958ed3aae.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/costas-cafe-sandwiches-hot-lunches.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261119_003125_85d3a789-5e66-42b7-b834-444231e0939d.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/poochie-doo-poochie-doo-grooming.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261119_003125_b51dac38-6278-4569-857b-3763d0e2cbec.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/poochie-doo-full-service-grooming.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261119_003125_c420e1af-66f3-4258-b22f-2c6cda29220e.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/poochie-doo-bath-brush.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261119_003125_8eca0c8f-2deb-4b5c-a2d2-24e6ed49012d.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/mels-pet-parlor-mel-s-pet-parlor.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261119_003156_59caec84-e53b-4409-87a0-e9a24e1a3bbb.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/mels-pet-parlor-mobile-grooming.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261119_003155_f6d2148d-1595-418b-bdfa-c40130dfc7e0.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/mels-pet-parlor-full-grooming.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261119_003156_fa8b9669-095c-4ffb-93aa-b5ca1439472b.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/hair-shop-the-hair-shop.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261119_003156_1645985b-90a1-46c9-9000-1a437f333328.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/hair-shop-bridal-parties.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261119_003156_11aafaa7-7de4-43ac-8c4e-bc40ead72904.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/hair-shop-color-styling.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261119_003228_c1a3a78c-011a-4541-bc52-e952afa96e70.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/h-barbershop-h-barbershop.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261119_003230_d35112b0-0d89-4ab7-b5c2-3636cdbc7e1b.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/h-barbershop-fresh-cuts.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261119_003229_dfcd48bf-7898-4bf7-b4f2-17764e943663.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/h-barbershop-barbershop-hair-salon.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261119_003229_15f2c109-6536-4c70-9939-c93691b8989f.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/maglys-flowers-magly-s-flower-shop.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261119_003239_0399acf9-aa2e-4d7b-969f-5ec0c8262508.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/maglys-flowers-flowers-gifts.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261119_003238_0646a864-39a3-4206-9383-16106606a9aa.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/email/maglys-flowers-delivered-fresh.jpg"
+  to = "/.netlify/images?url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_3Esk8OYU2FjG0AiTaNIrZKS91Pk%2Fhf_20261119_003239_b419a2ca-2f58-4091-9d53-b755495a92e9.png&w=1080&q=82&fm=jpg"
+  status = 200
+  force = true

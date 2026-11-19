@@ -13,8 +13,9 @@ from data import SHOPS, PICKS  # noqa: E402
 from data6 import SHOPS6, PICKS6  # noqa: E402
 from data7 import SHOPS7, THEMES7, FONTS7, KIND7  # noqa: E402
 from data8 import SHOPS8, THEMES8, FONTS8, KIND8  # noqa: E402
-SHOPS = {**SHOPS, **SHOPS6, **SHOPS7, **SHOPS8}
-PICKS = {**PICKS, **PICKS6, **{k: {'hero': 0, 'posts': [1, 2, 3, 4], 'stories': [5, 6], 'extra': 18} for k in {**SHOPS7, **SHOPS8}}}
+from data9 import SHOPS9, THEMES9, FONTS9, KIND9  # noqa: E402
+SHOPS = {**SHOPS, **SHOPS6, **SHOPS7, **SHOPS8, **SHOPS9}
+PICKS = {**PICKS, **PICKS6, **{k: {'hero': 0, 'posts': [1, 2, 3, 4], 'stories': [5, 6], 'extra': 18} for k in {**SHOPS7, **SHOPS8, **SHOPS9}}}
 ONLY = sys.argv[2:] if len(sys.argv) > 2 else None
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -266,9 +267,11 @@ THEME_CSS.update({
 })
 THEME_CSS.update(THEMES7)
 THEME_CSS.update(THEMES8)
+THEME_CSS.update(THEMES9)
 FONTS.update(FONTS7)
 FONTS.update(FONTS8)
-KIND = {**KIND7, **KIND8, "prime": "full", "dojo": "full", "nabod": "full", "labon": "split", "fe": "split", "legrand": "split", "bb": "split",
+FONTS.update(FONTS9)
+KIND = {**KIND7, **KIND8, **KIND9, "prime": "full", "dojo": "full", "nabod": "full", "labon": "split", "fe": "split", "legrand": "split", "bb": "split",
         "nneka": "arch", "paw": "arch", "yo": "arch"}
 
 
